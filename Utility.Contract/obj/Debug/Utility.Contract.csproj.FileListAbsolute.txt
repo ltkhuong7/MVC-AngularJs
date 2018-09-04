@@ -1,0 +1,4 @@
+F:\MyStuffs\Demo\InfoTrackTask\Utility.Contract\bin\Debug\Utility.Contract.dll
+F:\MyStuffs\Demo\InfoTrackTask\Utility.Contract\bin\Debug\Utility.Contract.pdb
+F:\MyStuffs\Demo\InfoTrackTask\Utility.Contract\obj\Debug\Utility.Contract.dll
+F:\MyStuffs\Demo\InfoTrackTask\Utility.Contract\obj\Debug\Utility.Contract.pdb

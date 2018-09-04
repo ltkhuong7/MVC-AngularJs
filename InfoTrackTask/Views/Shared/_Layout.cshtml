@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html ng-app="ll">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" name="viewport" />
+    <title>InfoTrack Test</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--[if lt IE 10]>
+        <script type="text/javascript">window.location='/common/error/unsupport_browser.html'</script>
+    <![endif]-->
+    <!--[if lt IE 11]>
+        <link media="all" href="/content/legacy.css" type="text/css" rel="stylesheet" />
+    <![endif]-->
+    @RenderSection("styles", required: false)
+    @Scripts.Render("~/bundles/jquery",
+        "~/Scripts/angular.js",
+        "~/Scripts/angular-local-storage.js",
+        "~/Scripts/moment.js",
+        "~/Scripts/angular-strap.js",
+        "~/Scripts/angular-strap.tpl.js",
+        //"~/Scripts/angular-growl-2.js",
+        "~/Scripts/growl.js",
+        "~/Scripts/growlDirective.js",
+        "~/Scripts/growlFactory.js",
+        "~/Scripts/growlMessageService.js",
+        "~/apps/app.js",
+        "~/apps/config.js",
+        "~/apps/constants.js",
+        "~/apps/directives/pagination/dirPagination.js",
+        "~/apps/search/search.service.js",
+        "~/apps/search/search.controller.js")
+    
+</head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+        <div growl limit-messages="10"></div>
+    </div>
+    
+    
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,7 @@
+F:\MyStuffs\Demo\InfoTrackTask\Utility\bin\Debug\Utility.dll
+F:\MyStuffs\Demo\InfoTrackTask\Utility\bin\Debug\Utility.pdb
+F:\MyStuffs\Demo\InfoTrackTask\Utility\bin\Debug\Utility.Contract.dll
+F:\MyStuffs\Demo\InfoTrackTask\Utility\bin\Debug\Utility.Contract.pdb
+F:\MyStuffs\Demo\InfoTrackTask\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+F:\MyStuffs\Demo\InfoTrackTask\Utility\obj\Debug\Utility.dll
+F:\MyStuffs\Demo\InfoTrackTask\Utility\obj\Debug\Utility.pdb

@@ -1,0 +1,13 @@
+F:\MyStuffs\Demo\InfoTrackTask\Business.Service\bin\Debug\Business.Service.dll
+F:\MyStuffs\Demo\InfoTrackTask\Business.Service\bin\Debug\Business.Service.pdb
+F:\MyStuffs\Demo\InfoTrackTask\Business.Service\bin\Debug\Business.Service.Contract.dll
+F:\MyStuffs\Demo\InfoTrackTask\Business.Service\bin\Debug\DataAccess.Provider.Contract.dll
+F:\MyStuffs\Demo\InfoTrackTask\Business.Service\bin\Debug\Utility.Contract.dll
+F:\MyStuffs\Demo\InfoTrackTask\Business.Service\bin\Debug\Business.Service.Contract.pdb
+F:\MyStuffs\Demo\InfoTrackTask\Business.Service\bin\Debug\DataAccess.Provider.Contract.pdb
+F:\MyStuffs\Demo\InfoTrackTask\Business.Service\bin\Debug\Utility.Contract.pdb
+F:\MyStuffs\Demo\InfoTrackTask\Business.Service\obj\Debug\Business.Service.csprojResolveAssemblyReference.cache
+F:\MyStuffs\Demo\InfoTrackTask\Business.Service\obj\Debug\Business.Service.dll
+F:\MyStuffs\Demo\InfoTrackTask\Business.Service\obj\Debug\Business.Service.pdb
+F:\MyStuffs\Demo\InfoTrackTask\Business.Service\bin\Debug\Entity.Model.dll
+F:\MyStuffs\Demo\InfoTrackTask\Business.Service\bin\Debug\Entity.Model.pdb

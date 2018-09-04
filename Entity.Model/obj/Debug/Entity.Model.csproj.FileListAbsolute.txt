@@ -1,0 +1,4 @@
+F:\MyStuffs\Demo\InfoTrackTask\Entity.Model\bin\Debug\Entity.Model.dll
+F:\MyStuffs\Demo\InfoTrackTask\Entity.Model\bin\Debug\Entity.Model.pdb
+F:\MyStuffs\Demo\InfoTrackTask\Entity.Model\obj\Debug\Entity.Model.dll
+F:\MyStuffs\Demo\InfoTrackTask\Entity.Model\obj\Debug\Entity.Model.pdb

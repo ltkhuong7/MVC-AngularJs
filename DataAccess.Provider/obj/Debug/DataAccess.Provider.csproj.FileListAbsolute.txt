@@ -1,0 +1,9 @@
+F:\MyStuffs\Demo\InfoTrackTask\DataAccess.Provider\bin\Debug\DataAccess.Provider.dll
+F:\MyStuffs\Demo\InfoTrackTask\DataAccess.Provider\bin\Debug\DataAccess.Provider.pdb
+F:\MyStuffs\Demo\InfoTrackTask\DataAccess.Provider\bin\Debug\DataAccess.Provider.Contract.dll
+F:\MyStuffs\Demo\InfoTrackTask\DataAccess.Provider\bin\Debug\DataAccess.Provider.Contract.pdb
+F:\MyStuffs\Demo\InfoTrackTask\DataAccess.Provider\obj\Debug\DataAccess.Provider.csprojResolveAssemblyReference.cache
+F:\MyStuffs\Demo\InfoTrackTask\DataAccess.Provider\obj\Debug\DataAccess.Provider.dll
+F:\MyStuffs\Demo\InfoTrackTask\DataAccess.Provider\obj\Debug\DataAccess.Provider.pdb
+F:\MyStuffs\Demo\InfoTrackTask\DataAccess.Provider\bin\Debug\Utility.Contract.dll
+F:\MyStuffs\Demo\InfoTrackTask\DataAccess.Provider\bin\Debug\Utility.Contract.pdb

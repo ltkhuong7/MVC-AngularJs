@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<main ng-controller="llSearchController as vm">
+    <form ng-submit="vm.search(vm.searchOption)" name="searchForm" role="form" novalidate>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">Search and count </h4>
+            </div>
+            <div class="panel-body">
+                <div class="callout callout-info pushT0" ng-hide="vm.googleResult">
+                    <h4>Note:</h4>
+                    <p>
+                        Please enter search detail below to perform search
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12 col-sm-12" ng-class="{ 'has-error' : searchForm.Keyword.$invalid }">
+                        <label for="Keyword">Keyword<span class="red">*</span></label>
+                        <input type="text" name="Keyword" id="Keyword" ng-model="vm.searchOption.Keyword" class="form-control" placeholder="Keyword" required title="Enter keyword" />
+                        <p ng-show="searchForm.Keyword.$invalid && searchForm.Keyword.$touched" class="help-block">Keyword is requied.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-4 col-sm-4" ng-class="{ 'has-error' : searchForm.SearchEngineSite.$invalid }">
+                        <label for="SearchEngineSite">Search engine<span class="red">*</span></label>
+                        <select name="SearchEngineSite" id="SearchEngineSite" ng-model="vm.searchOption.SearchEngineSite" class="form-control ptr" required>
+                            <option value="">---Select a search engine---</option>
+                            <option ng-repeat="se in vm.seList" value="{{se.value}}" ng-selected="se.value==vm.searchOption.SearchEngineSite">{{se.text}}</option>
+                        </select>
+                        <p ng-show="searchForm.SearchEngineSite.$invalid && searchForm.SearchEngineSite.$touched" class="help-block">Enter a valid search engine</p>
+                    </div>
+                    <div class="form-group col-md-4 col-sm-4" ng-class="{ 'has-error' : searchForm.TargetSite.$invalid }">
+                        <label for="TargetSite">Target site<span class="red">*</span></label>
+                        <input type="text" name="TargetSite" id="TargetSite" ng-model="vm.searchOption.TargetSite" class="form-control" placeholder="Your target site" required title="Enter your target site wants to count" />
+                        <p ng-show="searchForm.TargetSite.$invalid && searchForm.TargetSite.$touched" class="help-block">Target site is requied.</p>
+                    </div>
+                    <div class="form-group col-md-4 col-sm-4" ng-class="{ 'has-error' : searchForm.NoFirstResult.$invalid }">
+                        <label for="NoFirstResult">Limit<span class="red">*</span></label>
+                        <input type="text" name="NoFirstResult" id="NoFirstResult" ng-model="vm.searchOption.NoFirstResult" class="form-control" pattern = "[0-9]{1,3}" required placeholder="Number of first results" title="Enter number of first results" />
+                        <p ng-show="searchForm.NoFirstResult.$invalid && searchForm.NoFirstResult.$touched && searchForm.NoFirstResult.$error.required" class="help-block">Number is requied.</p>
+                        <p ng-show="searchForm.NoFirstResult.$invalid && searchForm.NoFirstResult.$touched && searchForm.NoFirstResult.$error.pattern" class="help-block">Please provide a valid limit number by using maximum 3 digits</p>
+                    </div>
+                </div>
+                <div class="row border-grey-t1 pullT">
+                    <div class="col-md-12">
+                        <button type="submit" ng-disabled="searchForm.$invalid || searchForm.$pristine || !vm.searchOption || vm.loading" class="btn btn-primary">Search</button>
+                        <a href="" ng-click="vm.viewAllResults()" ng-disabled="vm.loading" class="btn btn-link">View all history results</a>
+                        <a href="" ng-click="vm.reset()" ng-disabled="vm.loading" class="btn btn-link">Reset</a>
+                    </div>
+                </div>
+                <div class="row" ng-show="vm.googleResult && !vm.showHistory">
+                    <div class="col-md-12">
+                        <h4 class="border-orange-t pull10-0">Search found: <small>{{vm.googleResult.Result}}</small></h4>
+                    </div>
+                </div>
+                <div class="row" ng-show="vm.showHistory">
+                    <div class="col-md-12" ng-hide="vm.historyResults.length">
+                        <div class="callout callout-warning">
+                            <p>No history results found please perform search to get a result.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12" ng-show="vm.historyResults.length">
+                        <h4 class="border-orange-t border-grey-b1 pull10-0">All history results <span class="badge txtT">{{vm.historyResults.length}}</span></h4>
+                        <div class="table-responsive pushT" ng-if="vm.historyResults.length">
+                            <table class="table table-border table-hover pushT0">
+                                <thead>
+                                    <tr>
+                                        <td class="text-nowrap">Date search</td>
+                                        <td class="text-nowrap">Keyword</td>
+                                        <td class="text-nowrap">Search engine</td>
+                                        <td class="text-nowrap">Target site</td>
+                                        <td class="text-nowrap">Limit</td>
+                                        <td class="text-nowrap">Appear</td>
+                                        <td class="text-nowrap">Result</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr dir-paginate="result in vm.historyResults | orderBy: 'Id' : true | itemsPerPage: vm.pageSize" current-page="vm.currentPage" pagination-id="historyResultData">
+                                        <td class="txtM">{{result.DateSearch | date : vm.datetimeformat}}</td>
+                                        <td class="txtM">{{result.Keyword}}</td>
+                                        <td class="txtM">{{result.SearchEngineSite}}</td>
+                                        <td class="txtM">{{result.TargetSite}}</td>
+                                        <td class="txtM">{{result.NoFirstResult}}</td>
+                                        <td class="txtM">{{result.TotalResultCount}}</td>
+                                        <td class="txtM">{{result.Result}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" ng-show="vm.showHistory">
+                    <div class="col-md-12">
+                        <dir-pagination-controls class="pull-right" max-size="10" show-info="true" pagination-id="historyResultData"></dir-pagination-controls>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</main>

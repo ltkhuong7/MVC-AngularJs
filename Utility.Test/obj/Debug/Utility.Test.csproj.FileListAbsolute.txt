@@ -1,0 +1,10 @@
+F:\MyStuffs\Demo\InfoTrackTask\Utility.Test\bin\Debug\Utility.Test.dll
+F:\MyStuffs\Demo\InfoTrackTask\Utility.Test\bin\Debug\Utility.Test.pdb
+F:\MyStuffs\Demo\InfoTrackTask\Utility.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\MyStuffs\Demo\InfoTrackTask\Utility.Test\bin\Debug\Utility.dll
+F:\MyStuffs\Demo\InfoTrackTask\Utility.Test\bin\Debug\Utility.Contract.dll
+F:\MyStuffs\Demo\InfoTrackTask\Utility.Test\bin\Debug\Utility.pdb
+F:\MyStuffs\Demo\InfoTrackTask\Utility.Test\bin\Debug\Utility.Contract.pdb
+F:\MyStuffs\Demo\InfoTrackTask\Utility.Test\obj\Debug\Utility.Test.csprojResolveAssemblyReference.cache
+F:\MyStuffs\Demo\InfoTrackTask\Utility.Test\obj\Debug\Utility.Test.dll
+F:\MyStuffs\Demo\InfoTrackTask\Utility.Test\obj\Debug\Utility.Test.pdb

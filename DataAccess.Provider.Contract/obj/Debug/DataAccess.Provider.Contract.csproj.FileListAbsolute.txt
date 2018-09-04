@@ -1,0 +1,4 @@
+F:\MyStuffs\Demo\InfoTrackTask\DataAccess.Provider.Contract\bin\Debug\DataAccess.Provider.Contract.dll
+F:\MyStuffs\Demo\InfoTrackTask\DataAccess.Provider.Contract\bin\Debug\DataAccess.Provider.Contract.pdb
+F:\MyStuffs\Demo\InfoTrackTask\DataAccess.Provider.Contract\obj\Debug\DataAccess.Provider.Contract.dll
+F:\MyStuffs\Demo\InfoTrackTask\DataAccess.Provider.Contract\obj\Debug\DataAccess.Provider.Contract.pdb
